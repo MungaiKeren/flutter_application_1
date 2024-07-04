@@ -4,15 +4,25 @@ import 'package:flutter/widgets.dart';
 void main() => runApp(MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text(
-            'My first app', 
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white)
-            ),
+          title: const Text('My first app',
+              style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white)),
           centerTitle: true,
           backgroundColor: Colors.red[600],
         ),
         body: const Center(
-          child: Text('hello ninjas'),
+          child: Text(
+            'Hello Ninjas',
+            style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: Colors.blue,
+                letterSpacing: 2.0,
+                fontFamily: 'IndieFlower',
+                )
+            ),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
@@ -24,8 +34,8 @@ void main() => runApp(MaterialApp(
             style: TextStyle(
               fontWeight: FontWeight.bold,
               color: Colors.white,
-              ),
             ),
+          ),
         ),
       ),
     ));
