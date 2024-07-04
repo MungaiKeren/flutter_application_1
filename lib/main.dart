@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -20,17 +21,8 @@ class Home extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.red[600],
         ),
-        body: const Center(
-          child: Text(
-            'Hello Ninjas!',
-            style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-                color: Colors.blue,
-                letterSpacing: 2.0,
-                fontFamily: 'IndieFlower',
-                )
-            ),
+        body: Center(
+          child: Image.asset('assets/space-2.jpg'),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
