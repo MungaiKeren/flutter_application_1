@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-void main() => runApp(MaterialApp(
-      home: Scaffold(
+void main() => runApp(const MaterialApp(
+      home: Home(),
+    ));
+
+class Home extends StatelessWidget {
+  const Home({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
         appBar: AppBar(
           title: const Text('My first app',
               style: TextStyle(
@@ -14,7 +22,7 @@ void main() => runApp(MaterialApp(
         ),
         body: const Center(
           child: Text(
-            'Hello Ninjas',
+            'Hello Ninjas!',
             style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
@@ -37,5 +45,6 @@ void main() => runApp(MaterialApp(
             ),
           ),
         ),
-      ),
-    ));
+      );
+  }
+}
